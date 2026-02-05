@@ -1,19 +1,22 @@
 Strategy for image grid selection challenges (e.g., "select all stop signs"):
 
-1. **Read the prompt carefully** - identify exactly what to select (stop signs, vehicles, crosswalks, etc.)
-2. **Use Evaluate to inspect grid state** before clicking:
-   ```js
-   document.title = JSON.stringify([...document.querySelectorAll('[class*=grid] > *, [class*=item]')].map((el,i) => ({
-     i, cls: el.className, sel: el.classList.contains('selected') || el.getAttribute('aria-checked')==='true',
-     alt: el.querySelector('img')?.alt || '', src: el.querySelector('img')?.src?.slice(-30) || ''
-   })))
-   ```
-3. **First deselect any already-selected items** that don't match, then select matching ones
-4. **Click items by their CSS selector or coordinates** - prefer selectors when available
-5. **After selecting, use Evaluate to verify selection state** before clicking Verify/Submit
-6. **If Verify fails**: read the grid state again - items may have toggled. Deselect wrong ones, select correct ones, then retry.
+**GOAL: Solve in 2 rounds max. Round 1: select + verify. Round 2: adjust if wrong.**
 
-Key pitfalls:
-- Clicking a selected item DESELECTS it. Never click an already-correct selection.
-- The grid may shuffle after a failed verify attempt.
-- Use the screenshot + alt text + class names to identify which tiles match.
+1. **Look at the screenshot** carefully. Identify which tiles contain the target object by position (row, column).
+2. **Use Evaluate to toggle tiles to the correct state in ONE step**:
+   ```js
+   const items = [...document.querySelectorAll('[class*=grid-item], [class*=grid] > *')];
+   const correct = new Set([0, 1, 4, 5]); // replace with YOUR correct indices
+   items.forEach((el, i) => {
+     const sel = el.classList.contains('selected') || el.classList.contains('grid-item-selected');
+     if (correct.has(i) !== sel) el.click(); // only toggle tiles in wrong state
+   });
+   document.title = 'DONE';
+   ```
+3. **Click Verify** in the same round after the Evaluate.
+4. **If wrong**: try DIFFERENT tile indices. Don't repeat the same selection.
+
+Key rules:
+- Toggle only tiles that need changing, never deselect-all then reselect.
+- From the screenshot, map tile positions to grid indices (left-to-right, top-to-bottom, 0-indexed).
+- If stuck, use Evaluate to read alt text or image src hints: `items.map((el,i)=>({i, alt:el.querySelector('img')?.alt}))`
