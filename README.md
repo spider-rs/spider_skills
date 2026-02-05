@@ -46,7 +46,7 @@ Reference skills for the [spider.cloud API](https://spider.cloud/docs/api) — e
 | `screenshot` | POST `/screenshot` | Visual page capture |
 | `transform` | POST `/transform` | HTML-to-markdown/text conversion |
 | `unblocker` | POST `/unblocker` | Anti-bot bypass (10-40 extra credits) |
-| `ai` | POST `/ai/*` | AI-powered crawl, scrape, search, browser |
+| `ai` | POST `/ai/*` | AI-powered crawl, scrape, search, browser ([subscription required](https://spider.cloud/ai/pricing)) |
 
 ## Install (Rust)
 

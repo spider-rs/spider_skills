@@ -8,7 +8,7 @@ priority: 3
 
 # Spider API — AI Studio
 
-AI-powered endpoints that accept natural language prompts. Requires a subscription plan.
+AI-powered endpoints that accept natural language prompts. Requires a subscription — see [spider.cloud/ai/pricing](https://spider.cloud/ai/pricing) for plans.
 
 ## Authentication
 
