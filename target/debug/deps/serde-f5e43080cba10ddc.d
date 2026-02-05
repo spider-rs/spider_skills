@@ -1,0 +1,12 @@
+/Users/jeffreymendez/Code/OSS/spider_skills/target/debug/deps/serde-f5e43080cba10ddc.d: /Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/jeffreymendez/Code/OSS/spider_skills/target/debug/build/serde-ffe1212ea6083ba8/out/private.rs
+
+/Users/jeffreymendez/Code/OSS/spider_skills/target/debug/deps/libserde-f5e43080cba10ddc.rmeta: /Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/jeffreymendez/Code/OSS/spider_skills/target/debug/build/serde-ffe1212ea6083ba8/out/private.rs
+
+/Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/jeffreymendez/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/jeffreymendez/Code/OSS/spider_skills/target/debug/build/serde-ffe1212ea6083ba8/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/jeffreymendez/Code/OSS/spider_skills/target/debug/build/serde-ffe1212ea6083ba8/out
