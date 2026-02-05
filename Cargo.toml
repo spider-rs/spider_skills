@@ -1,14 +1,14 @@
 [package]
-name = "spider_skills"
+name = "spider_tactics"
 version = "0.1.0"
 authors = ["j-mendez <jeff@spider.cloud>"]
-description = "Web challenge solving skills for spider's automation agent."
-repository = "https://github.com/spider-rs/spider_skills"
+description = "Web automation tactics and strategies for spider's agent."
+repository = "https://github.com/spider-rs/spider_tactics"
 readme = "README.md"
-keywords = ["agent", "skills", "automation", "web", "challenges"]
+keywords = ["agent", "tactics", "automation", "web", "strategies"]
 categories = ["web-programming"]
 license = "MIT"
-documentation = "https://docs.rs/spider_skills"
+documentation = "https://docs.rs/spider_tactics"
 edition = "2021"
 
 [badges]
