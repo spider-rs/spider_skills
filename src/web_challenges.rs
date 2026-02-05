@@ -111,7 +111,7 @@ pub fn add_image_grid(registry: &mut SkillRegistry) {
         .with_trigger(SkillTrigger::html_contains("challenge-grid"))
         .with_trigger(SkillTrigger::title_contains("select all"))
         .with_priority(5)
-        .with_content(include_str!("skills/image_grid.md")),
+        .with_content(include_str!("../skills/automation/image_grid.md")),
     );
 }
 
@@ -127,7 +127,7 @@ pub fn add_text_captcha(registry: &mut SkillRegistry) {
         .with_trigger(SkillTrigger::title_contains("wiggles"))
         .with_trigger(SkillTrigger::title_contains("verify"))
         .with_priority(3)
-        .with_content(include_str!("skills/text_captcha.md")),
+        .with_content(include_str!("../skills/automation/text_captcha.md")),
     );
 }
 
@@ -142,7 +142,7 @@ pub fn add_rotation_puzzle(registry: &mut SkillRegistry) {
         .with_trigger(SkillTrigger::html_contains("rotate"))
         .with_trigger(SkillTrigger::html_contains("slider"))
         .with_priority(5)
-        .with_content(include_str!("skills/rotation.md")),
+        .with_content(include_str!("../skills/automation/rotation.md")),
     );
 }
 
@@ -158,7 +158,7 @@ pub fn add_tic_tac_toe(registry: &mut SkillRegistry) {
         .with_trigger(SkillTrigger::title_contains("tic tac"))
         .with_trigger(SkillTrigger::html_contains("tic-tac"))
         .with_priority(5)
-        .with_content(include_str!("skills/tic_tac_toe.md")),
+        .with_content(include_str!("../skills/automation/tic_tac_toe.md")),
     );
 }
 
@@ -172,7 +172,7 @@ pub fn add_word_search(registry: &mut SkillRegistry) {
         .with_trigger(SkillTrigger::title_contains("word search"))
         .with_trigger(SkillTrigger::title_contains("wordsearch"))
         .with_priority(5)
-        .with_content(include_str!("skills/word_search.md")),
+        .with_content(include_str!("../skills/automation/word_search.md")),
     );
 }
 
@@ -187,7 +187,7 @@ pub fn add_slider_drag(registry: &mut SkillRegistry) {
         .with_trigger(SkillTrigger::html_contains("slider-handle"))
         .with_trigger(SkillTrigger::html_contains("range-slider"))
         .with_priority(4)
-        .with_content(include_str!("skills/slider_drag.md")),
+        .with_content(include_str!("../skills/automation/slider_drag.md")),
     );
 }
 
@@ -201,7 +201,7 @@ pub fn add_audio_captcha(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("audiochallenge"))
             .with_trigger(SkillTrigger::title_contains("audio captcha"))
             .with_priority(4)
-            .with_content(include_str!("skills/audio_captcha.md")),
+            .with_content(include_str!("../skills/automation/audio_captcha.md")),
     );
 }
 
@@ -214,7 +214,7 @@ pub fn add_puzzle_piece_captcha(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("slide-captcha"))
             .with_trigger(SkillTrigger::html_contains("captcha-slider"))
             .with_priority(5)
-            .with_content(include_str!("skills/puzzle_piece_captcha.md")),
+            .with_content(include_str!("../skills/automation/puzzle_piece_captcha.md")),
     );
 }
 
@@ -225,7 +225,7 @@ pub fn add_honeypot_captcha(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("honeypot"))
             .with_trigger(SkillTrigger::html_contains("hp-field"))
             .with_priority(2)
-            .with_content(include_str!("skills/honeypot_captcha.md")),
+            .with_content(include_str!("../skills/automation/honeypot_captcha.md")),
     );
 }
 
@@ -237,7 +237,7 @@ pub fn add_math_captcha(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("math captcha"))
             .with_trigger(SkillTrigger::html_contains("arithmetic"))
             .with_priority(4)
-            .with_content(include_str!("skills/math_captcha.md")),
+            .with_content(include_str!("../skills/automation/math_captcha.md")),
     );
 }
 
@@ -249,7 +249,7 @@ pub fn add_visual_pattern_captcha(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("odd one out"))
             .with_trigger(SkillTrigger::title_contains("which is different"))
             .with_priority(4)
-            .with_content(include_str!("skills/visual_pattern_captcha.md")),
+            .with_content(include_str!("../skills/automation/visual_pattern_captcha.md")),
     );
 }
 
@@ -261,7 +261,7 @@ pub fn add_recaptcha_v2(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("recaptcha"))
             .with_trigger(SkillTrigger::html_contains("rc-anchor"))
             .with_priority(5)
-            .with_content(include_str!("skills/recaptcha_v2.md")),
+            .with_content(include_str!("../skills/automation/recaptcha_v2.md")),
     );
 }
 
@@ -272,7 +272,7 @@ pub fn add_recaptcha_v3(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("grecaptcha-badge"))
             .with_trigger(SkillTrigger::html_contains("recaptcha/api.js?render"))
             .with_priority(3)
-            .with_content(include_str!("skills/recaptcha_v3.md")),
+            .with_content(include_str!("../skills/automation/recaptcha_v3.md")),
     );
 }
 
@@ -283,7 +283,7 @@ pub fn add_hcaptcha(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("hcaptcha"))
             .with_trigger(SkillTrigger::html_contains("h-captcha"))
             .with_priority(5)
-            .with_content(include_str!("skills/hcaptcha.md")),
+            .with_content(include_str!("../skills/automation/hcaptcha.md")),
     );
 }
 
@@ -295,7 +295,7 @@ pub fn add_cloudflare_turnstile(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("challenges.cloudflare"))
             .with_trigger(SkillTrigger::html_contains("turnstile"))
             .with_priority(5)
-            .with_content(include_str!("skills/cloudflare_turnstile.md")),
+            .with_content(include_str!("../skills/automation/cloudflare_turnstile.md")),
     );
 }
 
@@ -306,7 +306,7 @@ pub fn add_geetest(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("geetest"))
             .with_trigger(SkillTrigger::html_contains("gt_slider"))
             .with_priority(5)
-            .with_content(include_str!("skills/geetest.md")),
+            .with_content(include_str!("../skills/automation/geetest.md")),
     );
 }
 
@@ -318,7 +318,7 @@ pub fn add_arkose_funcaptcha(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("funcaptcha"))
             .with_trigger(SkillTrigger::html_contains("arkose"))
             .with_priority(5)
-            .with_content(include_str!("skills/arkose_funcaptcha.md")),
+            .with_content(include_str!("../skills/automation/arkose_funcaptcha.md")),
     );
 }
 
@@ -329,7 +329,7 @@ pub fn add_text_in_image_captcha(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("captcha-image"))
             .with_trigger(SkillTrigger::html_contains("captchaImg"))
             .with_priority(4)
-            .with_content(include_str!("skills/text_in_image_captcha.md")),
+            .with_content(include_str!("../skills/automation/text_in_image_captcha.md")),
     );
 }
 
@@ -341,7 +341,7 @@ pub fn add_sequence_ordering_captcha(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("arrange in order"))
             .with_trigger(SkillTrigger::title_contains("put in order"))
             .with_priority(4)
-            .with_content(include_str!("skills/sequence_ordering_captcha.md")),
+            .with_content(include_str!("../skills/automation/sequence_ordering_captcha.md")),
     );
 }
 
@@ -352,7 +352,7 @@ pub fn add_image_rotation_captcha(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("rotate-captcha"))
             .with_trigger(SkillTrigger::title_contains("rotate the image"))
             .with_priority(5)
-            .with_content(include_str!("skills/image_rotation_captcha.md")),
+            .with_content(include_str!("../skills/automation/image_rotation_captcha.md")),
     );
 }
 
@@ -364,7 +364,7 @@ pub fn add_icon_captcha(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("IconCaptcha"))
             .with_trigger(SkillTrigger::title_contains("click the icon"))
             .with_priority(4)
-            .with_content(include_str!("skills/icon_captcha.md")),
+            .with_content(include_str!("../skills/automation/icon_captcha.md")),
     );
 }
 
@@ -375,7 +375,7 @@ pub fn add_semantic_captcha(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("question-captcha"))
             .with_trigger(SkillTrigger::html_contains("text-captcha-question"))
             .with_priority(3)
-            .with_content(include_str!("skills/semantic_captcha.md")),
+            .with_content(include_str!("../skills/automation/semantic_captcha.md")),
     );
 }
 
@@ -386,7 +386,7 @@ pub fn add_click_order_captcha(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("click in order"))
             .with_trigger(SkillTrigger::html_contains("click-order"))
             .with_priority(4)
-            .with_content(include_str!("skills/click_order_captcha.md")),
+            .with_content(include_str!("../skills/automation/click_order_captcha.md")),
     );
 }
 
@@ -397,7 +397,7 @@ pub fn add_captcha_3d_object(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("3d-captcha"))
             .with_trigger(SkillTrigger::html_contains("captcha-3d"))
             .with_priority(4)
-            .with_content(include_str!("skills/captcha_3d_object.md")),
+            .with_content(include_str!("../skills/automation/captcha_3d_object.md")),
     );
 }
 
@@ -408,7 +408,7 @@ pub fn add_captcha_audio_v2(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("rc-audiochallenge"))
             .with_trigger(SkillTrigger::html_contains("audio-response"))
             .with_priority(4)
-            .with_content(include_str!("skills/captcha_audio_v2.md")),
+            .with_content(include_str!("../skills/automation/captcha_audio_v2.md")),
     );
 }
 
@@ -422,7 +422,7 @@ pub fn add_jigsaw_puzzle(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("jigsaw"))
             .with_trigger(SkillTrigger::html_contains("puzzle-piece"))
             .with_priority(5)
-            .with_content(include_str!("skills/jigsaw_puzzle.md")),
+            .with_content(include_str!("../skills/automation/jigsaw_puzzle.md")),
     );
 }
 
@@ -435,7 +435,7 @@ pub fn add_sliding_tile_puzzle(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("8 puzzle"))
             .with_trigger(SkillTrigger::html_contains("sliding-puzzle"))
             .with_priority(5)
-            .with_content(include_str!("skills/sliding_tile_puzzle.md")),
+            .with_content(include_str!("../skills/automation/sliding_tile_puzzle.md")),
     );
 }
 
@@ -446,7 +446,7 @@ pub fn add_maze_solving(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("maze"))
             .with_trigger(SkillTrigger::html_contains("maze"))
             .with_priority(5)
-            .with_content(include_str!("skills/maze_solving.md")),
+            .with_content(include_str!("../skills/automation/maze_solving.md")),
     );
 }
 
@@ -457,7 +457,7 @@ pub fn add_sudoku(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("sudoku"))
             .with_trigger(SkillTrigger::html_contains("sudoku"))
             .with_priority(5)
-            .with_content(include_str!("skills/sudoku.md")),
+            .with_content(include_str!("../skills/automation/sudoku.md")),
     );
 }
 
@@ -468,7 +468,7 @@ pub fn add_crossword(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("crossword"))
             .with_trigger(SkillTrigger::html_contains("crossword"))
             .with_priority(5)
-            .with_content(include_str!("skills/crossword.md")),
+            .with_content(include_str!("../skills/automation/crossword.md")),
     );
 }
 
@@ -480,7 +480,7 @@ pub fn add_connect_the_dots(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("connect-dots"))
             .with_trigger(SkillTrigger::title_contains("dot to dot"))
             .with_priority(5)
-            .with_content(include_str!("skills/connect_the_dots.md")),
+            .with_content(include_str!("../skills/automation/connect_the_dots.md")),
     );
 }
 
@@ -492,7 +492,7 @@ pub fn add_pattern_matching(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("pattern"))
             .with_trigger(SkillTrigger::html_contains("matching-game"))
             .with_priority(3)
-            .with_content(include_str!("skills/pattern_matching.md")),
+            .with_content(include_str!("../skills/automation/pattern_matching.md")),
     );
 }
 
@@ -505,7 +505,7 @@ pub fn add_memory_card_game(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("memory-game"))
             .with_trigger(SkillTrigger::html_contains("card-flip"))
             .with_priority(5)
-            .with_content(include_str!("skills/memory_card_game.md")),
+            .with_content(include_str!("../skills/automation/memory_card_game.md")),
     );
 }
 
@@ -517,7 +517,7 @@ pub fn add_number_sequence(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("next number"))
             .with_trigger(SkillTrigger::html_contains("sequence-puzzle"))
             .with_priority(4)
-            .with_content(include_str!("skills/number_sequence.md")),
+            .with_content(include_str!("../skills/automation/number_sequence.md")),
     );
 }
 
@@ -529,7 +529,7 @@ pub fn add_color_matching(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("colour match"))
             .with_trigger(SkillTrigger::html_contains("color-match"))
             .with_priority(4)
-            .with_content(include_str!("skills/color_matching.md")),
+            .with_content(include_str!("../skills/automation/color_matching.md")),
     );
 }
 
@@ -541,7 +541,7 @@ pub fn add_shape_sorting(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("shape-sort"))
             .with_trigger(SkillTrigger::title_contains("sort the shapes"))
             .with_priority(4)
-            .with_content(include_str!("skills/shape_sorting.md")),
+            .with_content(include_str!("../skills/automation/shape_sorting.md")),
     );
 }
 
@@ -553,7 +553,7 @@ pub fn add_spot_the_difference(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("find the difference"))
             .with_trigger(SkillTrigger::html_contains("spot-difference"))
             .with_priority(5)
-            .with_content(include_str!("skills/spot_the_difference.md")),
+            .with_content(include_str!("../skills/automation/spot_the_difference.md")),
     );
 }
 
@@ -565,7 +565,7 @@ pub fn add_object_counting(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("count the"))
             .with_trigger(SkillTrigger::html_contains("counting-challenge"))
             .with_priority(4)
-            .with_content(include_str!("skills/object_counting.md")),
+            .with_content(include_str!("../skills/automation/object_counting.md")),
     );
 }
 
@@ -579,7 +579,7 @@ pub fn add_multi_step_form(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("form-wizard"))
             .with_trigger(SkillTrigger::html_contains("multi-step"))
             .with_priority(3)
-            .with_content(include_str!("skills/multi_step_form.md")),
+            .with_content(include_str!("../skills/automation/multi_step_form.md")),
     );
 }
 
@@ -591,7 +591,7 @@ pub fn add_file_upload(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("dropzone"))
             .with_trigger(SkillTrigger::html_contains("upload-area"))
             .with_priority(3)
-            .with_content(include_str!("skills/file_upload.md")),
+            .with_content(include_str!("../skills/automation/file_upload.md")),
     );
 }
 
@@ -603,7 +603,7 @@ pub fn add_address_form(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("shipping-address"))
             .with_trigger(SkillTrigger::html_contains("billing-address"))
             .with_priority(3)
-            .with_content(include_str!("skills/address_form.md")),
+            .with_content(include_str!("../skills/automation/address_form.md")),
     );
 }
 
@@ -616,7 +616,7 @@ pub fn add_payment_form(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("card-number"))
             .with_trigger(SkillTrigger::html_contains("braintree"))
             .with_priority(4)
-            .with_content(include_str!("skills/payment_form.md")),
+            .with_content(include_str!("../skills/automation/payment_form.md")),
     );
 }
 
@@ -628,7 +628,7 @@ pub fn add_form_validation(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("validation-error"))
             .with_trigger(SkillTrigger::html_contains("form-error"))
             .with_priority(2)
-            .with_content(include_str!("skills/form_validation.md")),
+            .with_content(include_str!("../skills/automation/form_validation.md")),
     );
 }
 
@@ -641,7 +641,7 @@ pub fn add_otp_input(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("enter code"))
             .with_trigger(SkillTrigger::title_contains("verification"))
             .with_priority(4)
-            .with_content(include_str!("skills/otp_input.md")),
+            .with_content(include_str!("../skills/automation/otp_input.md")),
     );
 }
 
@@ -652,7 +652,7 @@ pub fn add_web_form_autofill(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("registration-form"))
             .with_trigger(SkillTrigger::html_contains("signup-form"))
             .with_priority(2)
-            .with_content(include_str!("skills/web_form_autofill.md")),
+            .with_content(include_str!("../skills/automation/web_form_autofill.md")),
     );
 }
 
@@ -666,7 +666,7 @@ pub fn add_infinite_scroll(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("load-more"))
             .with_trigger(SkillTrigger::html_contains("infinite-loading"))
             .with_priority(3)
-            .with_content(include_str!("skills/infinite_scroll.md")),
+            .with_content(include_str!("../skills/automation/infinite_scroll.md")),
     );
 }
 
@@ -678,7 +678,7 @@ pub fn add_popup_modal(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("modal-backdrop"))
             .with_trigger(SkillTrigger::html_contains("popup-overlay"))
             .with_priority(6)
-            .with_content(include_str!("skills/popup_modal.md")),
+            .with_content(include_str!("../skills/automation/popup_modal.md")),
     );
 }
 
@@ -692,7 +692,7 @@ pub fn add_cookie_consent(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("onetrust"))
             .with_trigger(SkillTrigger::html_contains("cookiebot"))
             .with_priority(6)
-            .with_content(include_str!("skills/cookie_consent.md")),
+            .with_content(include_str!("../skills/automation/cookie_consent.md")),
     );
 }
 
@@ -705,7 +705,7 @@ pub fn add_age_verification(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("age verification"))
             .with_trigger(SkillTrigger::title_contains("are you 21"))
             .with_priority(6)
-            .with_content(include_str!("skills/age_verification.md")),
+            .with_content(include_str!("../skills/automation/age_verification.md")),
     );
 }
 
@@ -718,7 +718,7 @@ pub fn add_login_wall(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("sign in"))
             .with_trigger(SkillTrigger::title_contains("log in"))
             .with_priority(4)
-            .with_content(include_str!("skills/login_wall.md")),
+            .with_content(include_str!("../skills/automation/login_wall.md")),
     );
 }
 
@@ -730,7 +730,7 @@ pub fn add_paywall_detection(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("subscribe-wall"))
             .with_trigger(SkillTrigger::html_contains("premium-content"))
             .with_priority(3)
-            .with_content(include_str!("skills/paywall_detection.md")),
+            .with_content(include_str!("../skills/automation/paywall_detection.md")),
     );
 }
 
@@ -742,7 +742,7 @@ pub fn add_redirect_chain(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("redirecting"))
             .with_trigger(SkillTrigger::title_contains("please wait"))
             .with_priority(3)
-            .with_content(include_str!("skills/redirect_chain.md")),
+            .with_content(include_str!("../skills/automation/redirect_chain.md")),
     );
 }
 
@@ -752,7 +752,7 @@ pub fn add_iframe_interaction(registry: &mut SkillRegistry) {
         Skill::new("iframe-interaction", "Interact with content inside iframes")
             .with_trigger(SkillTrigger::html_contains("<iframe"))
             .with_priority(2)
-            .with_content(include_str!("skills/iframe_interaction.md")),
+            .with_content(include_str!("../skills/automation/iframe_interaction.md")),
     );
 }
 
@@ -764,7 +764,7 @@ pub fn add_lazy_loaded_content(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("data-src"))
             .with_trigger(SkillTrigger::html_contains("lazyload"))
             .with_priority(2)
-            .with_content(include_str!("skills/lazy_loaded_content.md")),
+            .with_content(include_str!("../skills/automation/lazy_loaded_content.md")),
     );
 }
 
@@ -775,7 +775,7 @@ pub fn add_pagination_navigation(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("pagination"))
             .with_trigger(SkillTrigger::html_contains("page-nav"))
             .with_priority(2)
-            .with_content(include_str!("skills/pagination_navigation.md")),
+            .with_content(include_str!("../skills/automation/pagination_navigation.md")),
     );
 }
 
@@ -789,7 +789,7 @@ pub fn add_drag_drop_sorting(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("draggable"))
             .with_trigger(SkillTrigger::title_contains("drag and drop"))
             .with_priority(4)
-            .with_content(include_str!("skills/drag_drop_sorting.md")),
+            .with_content(include_str!("../skills/automation/drag_drop_sorting.md")),
     );
 }
 
@@ -801,7 +801,7 @@ pub fn add_chart_data_extraction(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("chart-container"))
             .with_trigger(SkillTrigger::html_contains("chartjs"))
             .with_priority(3)
-            .with_content(include_str!("skills/chart_data_extraction.md")),
+            .with_content(include_str!("../skills/automation/chart_data_extraction.md")),
     );
 }
 
@@ -813,7 +813,7 @@ pub fn add_drag_to_target(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("dropzone"))
             .with_trigger(SkillTrigger::html_contains("drag-target"))
             .with_priority(4)
-            .with_content(include_str!("skills/drag_to_target.md")),
+            .with_content(include_str!("../skills/automation/drag_to_target.md")),
     );
 }
 
@@ -825,7 +825,7 @@ pub fn add_table_extraction(registry: &mut SkillRegistry) {
         Skill::new("table-extraction", "Extract structured data from tables")
             .with_trigger(SkillTrigger::html_contains("<table"))
             .with_priority(1)
-            .with_content(include_str!("skills/table_extraction.md")),
+            .with_content(include_str!("../skills/automation/table_extraction.md")),
     );
 }
 
@@ -837,7 +837,7 @@ pub fn add_product_listing(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("product-list"))
             .with_trigger(SkillTrigger::html_contains("product-grid"))
             .with_priority(2)
-            .with_content(include_str!("skills/product_listing.md")),
+            .with_content(include_str!("../skills/automation/product_listing.md")),
     );
 }
 
@@ -849,7 +849,7 @@ pub fn add_contact_extraction(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("contact-info"))
             .with_trigger(SkillTrigger::url_contains("contact"))
             .with_priority(2)
-            .with_content(include_str!("skills/contact_extraction.md")),
+            .with_content(include_str!("../skills/automation/contact_extraction.md")),
     );
 }
 
@@ -861,7 +861,7 @@ pub fn add_search_results(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("search-listing"))
             .with_trigger(SkillTrigger::title_contains("search results"))
             .with_priority(2)
-            .with_content(include_str!("skills/search_results.md")),
+            .with_content(include_str!("../skills/automation/search_results.md")),
     );
 }
 
@@ -872,7 +872,7 @@ pub fn add_price_scraping(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("price-tag"))
             .with_trigger(SkillTrigger::html_contains("product-price"))
             .with_priority(2)
-            .with_content(include_str!("skills/price_scraping.md")),
+            .with_content(include_str!("../skills/automation/price_scraping.md")),
     );
 }
 
@@ -886,7 +886,7 @@ pub fn add_rate_limiting(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("too many requests"))
             .with_trigger(SkillTrigger::title_contains("rate limit"))
             .with_priority(6)
-            .with_content(include_str!("skills/rate_limiting.md")),
+            .with_content(include_str!("../skills/automation/rate_limiting.md")),
     );
 }
 
@@ -900,7 +900,7 @@ pub fn add_bot_detection(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("distil"))
             .with_trigger(SkillTrigger::title_contains("access denied"))
             .with_priority(6)
-            .with_content(include_str!("skills/bot_detection.md")),
+            .with_content(include_str!("../skills/automation/bot_detection.md")),
     );
 }
 
@@ -911,7 +911,7 @@ pub fn add_fingerprint_challenge(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("fingerprintjs"))
             .with_trigger(SkillTrigger::html_contains("fpjs"))
             .with_priority(3)
-            .with_content(include_str!("skills/fingerprint_challenge.md")),
+            .with_content(include_str!("../skills/automation/fingerprint_challenge.md")),
     );
 }
 
@@ -923,7 +923,7 @@ pub fn add_proof_of_work(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("hashcash"))
             .with_trigger(SkillTrigger::title_contains("computing"))
             .with_priority(5)
-            .with_content(include_str!("skills/proof_of_work.md")),
+            .with_content(include_str!("../skills/automation/proof_of_work.md")),
     );
 }
 
@@ -935,7 +935,7 @@ pub fn add_js_challenge_page(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::title_contains("just a moment"))
             .with_trigger(SkillTrigger::html_contains("cf-browser-verification"))
             .with_priority(6)
-            .with_content(include_str!("skills/js_challenge_page.md")),
+            .with_content(include_str!("../skills/automation/js_challenge_page.md")),
     );
 }
 
@@ -947,7 +947,7 @@ pub fn add_device_verification(registry: &mut SkillRegistry) {
             .with_trigger(SkillTrigger::html_contains("trusted-device"))
             .with_trigger(SkillTrigger::title_contains("verify your device"))
             .with_priority(5)
-            .with_content(include_str!("skills/device_verification.md")),
+            .with_content(include_str!("../skills/automation/device_verification.md")),
     );
 }
 

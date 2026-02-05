@@ -4,11 +4,51 @@
 [![Documentation](https://docs.rs/spider_skills/badge.svg)](https://docs.rs/spider_skills)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Reusable automation tactics for the [spider-rs](https://github.com/spider-rs/spider) ecosystem.
+Skills and automation tactics for [spider](https://github.com/spider-rs/spider) rust projects.
 
-Pre-built skill definitions for solving common web challenges: CAPTCHAs, anti-bot systems, interactive puzzles, access barriers, and data extraction patterns. Skills are prompt fragments with trigger conditions that get dynamically injected into the LLM context when the page state matches.
+Pre-built skill definitions for solving common web challenges and interacting with the [spider.cloud](https://spider.cloud) API. Skills are markdown prompt fragments with trigger conditions that get dynamically injected into the LLM context when the page state matches.
 
-## Install
+> **Note:** The Rust crate is optional — it provides a typed integration layer for the [spider.rs](https://github.com/spider-rs/spider) ecosystem. The skill definitions in `skills/` are standalone markdown files usable with any LLM-based automation system.
+
+## Skill Folders
+
+```
+skills/
+  automation/   69 web challenge skills (CAPTCHAs, puzzles, forms, security, data extraction)
+  api/           8 spider.cloud API reference skills (crawl, scrape, search, screenshot, etc.)
+```
+
+### Automation Skills (`skills/automation/`)
+
+Pre-built tactics for common web challenges encountered during crawling and browser automation. Each `.md` file contains YAML frontmatter (trigger conditions, priority) and prompt content for LLM-driven solving.
+
+**Categories:**
+
+| Category | Count | Examples |
+|----------|-------|---------|
+| CAPTCHAs | 20 | reCAPTCHA v2/v3, hCaptcha, Turnstile, GeeTest, FunCaptcha, audio, math, puzzle piece |
+| Interactive Puzzles | 19 | Image grids, tic-tac-toe, word search, sliding tiles, mazes, sudoku, crosswords, memory games |
+| Access Barriers | 10 | Cookie consent, login walls, age verification, paywalls, popups, redirect chains, iframes |
+| Form Automation | 8 | Multi-step forms, file uploads, OTP inputs, payment forms, address forms |
+| Anti-Bot / Security | 6 | Bot detection, rate limiting, JS challenges, proof-of-work, fingerprinting, device verification |
+| Data Extraction | 6 | Tables, product listings, contact info, pricing, search results, charts |
+
+### API Skills (`skills/api/`)
+
+Reference skills for the [spider.cloud API](https://spider.cloud/docs/api) — endpoint documentation, parameters, and usage examples.
+
+| Skill | Endpoint | Description |
+|-------|----------|-------------|
+| `crawl` | POST `/crawl` | Multi-page website crawling |
+| `scrape` | POST `/scrape` | Single-page data extraction |
+| `search` | POST `/search` | SERP queries with optional content fetch |
+| `links` | POST `/links` | Link discovery and extraction |
+| `screenshot` | POST `/screenshot` | Visual page capture |
+| `transform` | POST `/transform` | HTML-to-markdown/text conversion |
+| `unblocker` | POST `/unblocker` | Anti-bot bypass (10-40 extra credits) |
+| `ai` | POST `/ai/*` | AI-powered crawl, scrape, search, browser |
+
+## Install (Rust)
 
 ```toml
 [dependencies]
@@ -99,26 +139,6 @@ source.load_into(&mut registry, "skills/").await?;
 # }
 ```
 
-## Skill Categories
-
-### CAPTCHAs (20 skills)
-reCAPTCHA v2/v3, hCaptcha, Cloudflare Turnstile, GeeTest, Arkose/FunCaptcha, text CAPTCHAs, image rotation CAPTCHAs, audio CAPTCHAs, math CAPTCHAs, puzzle piece CAPTCHAs, and more.
-
-### Anti-Bot / Security (6 skills)
-Bot detection, rate limiting, JS challenge pages, proof-of-work, fingerprint challenges, device verification.
-
-### Interactive Puzzles (19 skills)
-Image grids, tic-tac-toe, word search, sliding tile puzzles, mazes, sudoku, crosswords, memory games, jigsaw puzzles, rotation puzzles, and more.
-
-### Access Barriers (10 skills)
-Cookie consent, login walls, age verification, paywalls, popups/modals, redirect chains, iframe interactions.
-
-### Data Extraction (6 skills)
-Tables, product listings, contact info, pricing, search results, charts.
-
-### Form Automation (8 skills)
-Multi-step forms, file uploads, OTP inputs, payment forms, address forms, form validation.
-
 ## Architecture
 
 ```
@@ -128,7 +148,7 @@ Multi-step forms, file uploads, OTP inputs, payment forms, address forms, form v
 │  │ Skill, SkillTrigger, │ │  ← Core types (defined here)
 │  │ SkillRegistry        │ │
 │  ├──────────────────────┤ │
-│  │ web_challenges       │ │  ← 69 built-in .md skill files
+│  │ web_challenges       │ │  ← 69 built-in automation skills
 │  │ fetch                │ │  ← Optional: fetch from URLs
 │  │ s3                   │ │  ← Optional: load from S3
 │  └──────────────────────┘ │

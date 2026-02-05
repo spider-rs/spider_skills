@@ -1,6 +1,6 @@
 [package]
 name = "spider_skills"
-version = "0.1.4"
+version = "0.1.5"
 authors = ["j-mendez <jeff@spider.cloud>"]
 description = "Skills and automation tactics for spider rust projects"
 repository = "https://github.com/spider-rs/spider_skills"
