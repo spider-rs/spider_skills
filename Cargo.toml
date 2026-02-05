@@ -1,21 +1,20 @@
 [package]
-name = "spider_tactics"
-version = "0.1.0"
+name = "spider_skills"
+version = "0.1.4"
 authors = ["j-mendez <jeff@spider.cloud>"]
-description = "Web automation tactics and strategies for spider's agent."
-repository = "https://github.com/spider-rs/spider_tactics"
+description = "Skills and automation tactics for spider rust projects"
+repository = "https://github.com/spider-rs/spider_skills"
 readme = "README.md"
-keywords = ["agent", "tactics", "automation", "web", "strategies"]
-categories = ["web-programming"]
+keywords = ["automation", "tactics", "web", "skills", "spider"]
+categories = ["web-programming", "web-programming::http-client"]
 license = "MIT"
-documentation = "https://docs.rs/spider_tactics"
+documentation = "https://docs.rs/spider_skills"
 edition = "2021"
 
 [badges]
 maintenance = { status = "actively-developed" }
 
 [dependencies]
-spider_agent = { path = "../spider/spider_agent", features = ["skills"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 log = "0.4"
@@ -32,7 +31,18 @@ web_challenges = []
 # HTTP fetching of remote skill definitions
 fetch = ["dep:reqwest"]
 
+# Load skills from AWS S3
+s3 = ["dep:aws-sdk-s3", "dep:aws-config"]
+
 [dependencies.reqwest]
 version = "0.12"
 optional = true
 features = ["json"]
+
+[dependencies.aws-sdk-s3]
+version = "1"
+optional = true
+
+[dependencies.aws-config]
+version = "1"
+optional = true
