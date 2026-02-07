@@ -29,11 +29,21 @@ Content-Type: application/json
 
 ## Parameters
 
-All AI endpoints accept standard parameters from their non-AI counterparts plus:
+All AI endpoints inherit standard parameters from their non-AI counterparts:
+
+- `/ai/crawl` inherits from `/crawl`
+- `/ai/scrape` inherits from `/scrape`
+- `/ai/search` inherits from `/search`
+- `/ai/links` inherits from `/links`
+- `/ai/browser` follows AI browser route semantics
+
+AI-specific additions:
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
 | `prompt` | string | Yes | Natural language instructions for the AI |
+| `extraction_schema` | object | No | JSON schema object for typed structured extraction output |
+| `cleaning_intent` | string | No | HTML cleaning mode: `extraction`, `action`, or `general` |
 
 ## Example — AI Crawl
 
