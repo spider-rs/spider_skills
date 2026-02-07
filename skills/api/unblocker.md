@@ -12,6 +12,8 @@ priority: 3
 
 Bypass anti-bot protections on challenging websites. Costs 10-40 additional credits per successful unblock.
 
+For prompt-based AI routes, use `/ai/*` endpoints (`/ai/crawl`, `/ai/scrape`, `/ai/search`, `/ai/browser`, `/ai/links`) with an AI subscription plan: <https://spider.cloud/ai/pricing>
+
 ## Authentication
 
 ```

@@ -12,6 +12,8 @@ priority: 3
 
 Scrape a single page for targeted data extraction. Does NOT follow links.
 
+AI-guided scrape prompts use **POST** `https://api.spider.cloud/ai/scrape` and require an AI subscription plan: <https://spider.cloud/ai/pricing>
+
 ## Authentication
 
 ```

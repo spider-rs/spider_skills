@@ -12,6 +12,8 @@ priority: 3
 
 Crawl a website and collect pages. Follows links across the site up to configured depth and limit.
 
+AI-guided crawl prompts use **POST** `https://api.spider.cloud/ai/crawl` and require an AI subscription plan: <https://spider.cloud/ai/pricing>
+
 ## Authentication
 
 ```

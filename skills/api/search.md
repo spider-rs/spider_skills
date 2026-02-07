@@ -12,6 +12,8 @@ priority: 3
 
 Real-time search engine results (SERP). Optionally fetch and crawl result pages. Supports up to 50,000 search requests per minute.
 
+AI-enhanced search prompts use **POST** `https://api.spider.cloud/ai/search` and require an AI subscription plan: <https://spider.cloud/ai/pricing>
+
 ## Authentication
 
 ```

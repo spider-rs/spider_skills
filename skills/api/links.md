@@ -12,6 +12,8 @@ priority: 3
 
 Extract all discoverable links from target page(s). Returns URLs without fetching their content. Supports streaming.
 
+AI link extraction prompts use **POST** `https://api.spider.cloud/ai/links` and require an AI subscription plan: <https://spider.cloud/ai/pricing>
+
 ## Authentication
 
 ```
