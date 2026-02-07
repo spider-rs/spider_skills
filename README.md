@@ -16,19 +16,22 @@ Pre-built skill definitions for solving common web challenges and interacting wi
 skills/
   automation/   69 web challenge skills (CAPTCHAs, puzzles, forms, security, data extraction)
   api/           8 spider.cloud API reference skills (crawl, scrape, search, screenshot, etc.)
-codex-skills/
-  spider-cli-extraction/  Codex-native SKILL.md for Spider OSS CLI workflows
+  core/          agent-agnostic skill specs
+  codex/         Codex adapter skills (SKILL.md format)
+  claude/        Claude adapter skills
 ```
 
-## Codex Skills
+## Cross-Agent Skills
 
-This repository also includes Codex-native skills (with `SKILL.md`) under `codex-skills/`.
+This repository includes a generic core skill spec plus platform adapters.
 
-Current Codex skill:
+Current Spider CLI extraction skill:
 
-- `codex-skills/spider-cli-extraction` — Spider OSS CLI crawl/scrape/extraction workflows with runtime `--headless` and `--http` mode control.
+- Core: `skills/core/spider-cli-extraction.md`
+- Codex adapter: `skills/codex/spider-cli-extraction/`
+- Claude adapter: `skills/claude/spider-cli-extraction.md`
 
-To use directly with Codex, copy the skill folder into `$CODEX_HOME/skills/` (for example: `~/.codex/skills/spider-cli-extraction`).
+To use with Codex, copy `skills/codex/spider-cli-extraction/` to `$CODEX_HOME/skills/spider-cli-extraction`.
 
 ### Automation Skills (`skills/automation/`)
 

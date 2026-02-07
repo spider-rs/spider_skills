@@ -9,6 +9,8 @@ description: Use Spider Rust CLI for crawling, scraping, and extraction tasks fr
 
 Use this skill to run Spider CLI workflows with explicit runtime mode control.
 
+Canonical source for cross-agent behavior: `skills/core/spider-cli-extraction.md`
+
 Load `references/cli-workflows.md` when you need exact command patterns or mode-selection rules.
 
 ## Workflow
