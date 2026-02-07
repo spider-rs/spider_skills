@@ -21,6 +21,9 @@ Authorization: Bearer $SPIDER_API_KEY
 Content-Type: application/json
 ```
 
+
+Full parameter matrix: `skills/api/parameters.md`
+
 ## Required Parameters
 
 | Parameter | Type | Description |
